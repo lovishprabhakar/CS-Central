@@ -19,12 +19,13 @@ CS Central is a website that provides combined characteristics of:
 <br>
 
 
-![Preview](https://user-images.githubusercontent.com/89595539/194697064-e115e22c-b219-45a8-a1f7-b20359d1c166.png)
+![cscentra](https://user-images.githubusercontent.com/89595539/232108989-cd2a67a7-30de-45cd-92f0-adbe88117786.png)
+
 
 
 - ## Website
 
-Check out the website: https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html
+Check out the [CS Central](https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html)
 
 
 ## Tech stack
