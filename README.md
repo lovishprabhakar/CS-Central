@@ -24,7 +24,7 @@ CS Central is a website that provides combined characteristics of:
 
 - ## Website
 
-Check out the website: https://lovishprabhakar.github.io/C-Simplify/Code/index.html
+Check out the website: https://lovishprabhakar.is-a.dev/CS-Central/Code/index.html
 
 
 ## Tech stack
