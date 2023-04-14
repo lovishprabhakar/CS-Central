@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="audience" content="Everyone">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="website, blog, foo, bar">
+    <meta name="author" content="Name of an Owner.">
+    <meta name="publisher" content="Name of an Owner.">
+    <meta name="copyright" content="Name of an Owner.">
+    <title>CS Central - Home</title>
+    <link rel="shortcut icon" href="./assets/favicons/fav-32x32.png" type="image/x-icon">
+
+    <link   
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU"
+      type="image/png"
+    />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLo7gB9lFCW0lf0KR2genMUcM33ZZgvpcaw&usqp=CAU" type="image/png">
+    <!-- CSS only -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css"  />
+
+    <link rel="stylesheet" href="./css/global.css"  />
+    <link rel="stylesheet" href="./css/index.css"  />
+    <link
+     
+      rel="stylesheet"
+     
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+
+    <!-- Share Buttons -->
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=633ac625c2af2800193d4b78&product=sticky-share-buttons"
+        async="async">
+    </script>
+
+    <!-- End Share Buttons -->
+    
+  </head>
+
+    <body>
+    <!-- Header  -->
+    <header>
+      <div class="bg-dark collapse " id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted" id="header_info">
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled" id="header_list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <img src="./assets/logo.png" alt="Logo" id="logo">
+            <!-- <i class="bi bi-balloon-heart-fill fs-1"></i> -->
+            <strong><h1>CS Central</h1></strong>
+          </a>
+          <nav class="navbar" id="topnav">
+            <ul class="nav">
+                <li><a href="./compile-run.html"> CCR</a></li>
+                <li><a href="./currency-change.html"> CER</a></li>
+                <li><a href="./postal-code.html"> PIN</a></li>
+                <div class="dropdown">
+                <li><a href="#"> More  <i class="fa fa-caret-down"></i></a></li>
+                <div class="dropdown-content">
+                    <a href="./news.html"> MRI</a>
+                    <a href="./location.html"> SWF </a>
+                    <a href="./contest.html">PYP </a>
+                    <a href="./translation.html">CST</a>
+                    <a href="./qr-gen.html">QR </a>
+                    <a href="./dictionary.html">CSD </a>
+                    <a href="./notefy.html">NOTEFY </a>
+                    <a href="./encrypt-decrypt.html">CCE </a>
+                    <a href="./randomcolor-palette.html">CPG </a>
+                    <a href="./random-joke-generator.html">RJG </a>
+                    <a href="./encrypt-decrypt.html">EAD </a>
+                </div>
+            </ul>
+          </nav>
+          <div class="d-flex">
+            <input
+              type="search"
+              name=""
+              id="searchCard"
+              
+              class="form-control form-control-sm"
+              placeholder="🔍 Search..."
+              autocomplete="off"
+            />
+            <div class="">
+              <i  id="search-btn"></i>
+              
+            </div>
+            
+            <!-- <a class="mx-2 my-2" style="cursor: pointer" id="search"><i class="bi bi-search-heart-fill fs-0 "></i></a> -->
+          </div>
+
+          <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+          
+          </div>
+          <div id="menu-bar" class="fas fa-bars"></div>
+          
+          
+        </div>
+      </div>
+      </div>
+    </header>
+    <!-- Random Quotes  -->
+    <div class="container" style="margin-top: 30px">
+      <div class="alert alert-primary" role="alert">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p id="random-quote"></p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Author" id="random-quote-author"></cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- Title Cards  -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="mainRow">
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./compile-run.html"><img class="card-img-top" alt="Loading image" id="card-img13" /></a>
+            <div class="card-body">
+              <a href="./compile-run.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title13"
+                ></h5>
+              </a>
+              <p class="card-text" id="content13"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Projects -->
+      <div class="col">
+        <div class="card h-100">
+          <a href="./projects.html">
+            <img class="card-img-top" alt="Loading image" id="card-img15">
+          </a>
+          <div class="card-body">
+            <a href="./projects.html" class="text-decoration-none">
+              <h5 class="card-title text-capitalize text-blue"
+              >
+              <i class ="bi bi-code"></i>
+              PPH - Polyglot Project Hub
+            </h5>
+            </a>
+            <p class="card-text" id="content13">Polyglot Project Hub is a platform that brings together multiple projects from different programming languages, allowing developers to easily upload and add information such as project description, features, and technical details.</p>
+        </div>
+        </div>
+       </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./currency-change.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img1" />
+            </a>
+            <div class="card-body">
+              <a href="./currency-change.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title1"
+                ></h5>
+              </a>
+              <p class="card-text" id="content1"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./postal-code.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img2" />
+            </a>
+            <div class="card-body">
+              <a href="./postal-code.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title2"
+                ></h5>
+              </a>
+              <p class="card-text" id="content2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./news.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img3" />
+            </a>
+            <div class="card-body">
+              <a href="./news.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title3"
+                ></h5>
+              </a>
+              <p class="card-text" id="content3"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./location.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img4" />
+            </a>
+            <div class="card-body">
+              <a href="./location.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title4"
+                ></h5>
+              </a>
+              <p class="card-text" id="content4"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./contest.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img5" />
+            </a>
+            <div class="card-body">
+              <a href="./contest.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title5"
+                ></h5>
+              </a>
+              <p class="card-text" id="content5"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./translation.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img6" />
+            </a>
+            <div class="card-body">
+              <a href="./translation.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title6"
+                ></h5>
+              </a>
+              <p class="card-text" id="content6"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./qr-gen.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img7" />
+            </a>
+            <div class="card-body">
+              <a href="./qr-gen.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title7"
+                ></h5>
+              </a>
+              <p class="card-text" id="content7"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./dictionary.html" class="text-decoration-none">
+              <img class="card-img-top" alt="Loading image" id="card-img8" />
+            </a>
+            <div class="card-body">
+              <a href="./dictionary.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title8"
+                ></h5>
+              </a>
+              <p class="card-text" id="content8"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./notefy.html"><img class="card-img-top" alt="Loading image" id="card-img9" /></a>
+            <div class="card-body">
+              <a href="./notefy.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title9"
+                ></h5>
+              </a>
+              <p class="card-text" id="content9"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="card">
+          <div class="card h-100">
+            <a href="./caesar.html"><img class="card-img-top" alt="Loading image" id="card-img10" /></a>
+            <div class="card-body">
+              <a href="./caesar.html" class="text-decoration-none">
+                <h5
+                  class="card-title text-capitalize text-blue"
+                  id="title10"
+                ></h5>
+              </a>
+              <p class="card-text" id="content10"></p>
+            </div>
+        </div>    
+      </div>
+      <div class="col" id="card">
+        <div class="card h-100">
+          <a href="./randomcolor-palette.html"><img class="card-img-top" alt="Loading image" id="card-img11" /></a>
+          <div class="card-body">
+            <a href="./randomcolor-palette.html" class="text-decoration-none">
+              <h5
+                class="card-title text-capitalize text-blue"
+                id="title11"
+              ></h5>
+            </a>
+            <p class="card-text" id="content11"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col" id="card">
+        <div class="card h-100">
+          <a href="./random-joke-generator.html"><img class="card-img-top" alt="Loading image" id="card-img12" /></a>
+          <div class="card-body">
+            <a href="./random-joke-generator.html" class="text-decoration-none">
+              <h5
+                class="card-title text-capitalize text-blue"
+                id="title12"
+              ></h5>
+            </a>
+            <p class="card-text" id="content12"></p>
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <div class="col" id="card">
+        <div class="card h-100">
+          <a href="./encrypt-decrypt.html"><img class="card-img-top" alt="Loading image" id="card-img14" /></a>
+          <div class="card-body">
+            <a href="./encrypt-decrypt.html" class="text-decoration-none">
+              <h5
+                class="card-title text-capitalize text-blue"
+                id="title14"
+              ></h5>
+            </a>
+            <p class="card-text" id="content14"></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col">
+        <div class="card h-100">
+          <a href="./calculator.html">
+            <img class="card-img-top" alt="Loading image" id="card-img11" src = "assets/calculator.webp">
+          </a>
+          <div class="card-body">
+            <a href="./calculator.html" class="text-decoration-none">
+              <h5 class="card-title text-capitalize text-blue"
+                id="title12">
+              <i class ="bi bi-card-text"></i>
+              Calculator
+            </h5>
+            </a>
+            <p class="card-text" id="content13">Calculator are very useful in daily life. By this you can solve complex calculaions with in a seconds. Try this once. Have a Great fun...</p>
+        </div>
+        </div>
+       </div> -->
+       <!-- <div class="col">
+        <div class="card h-100">
+          <a href="./name_to_avatar.html">
+            <img class="card-img-top" alt="Loading image" id="card-img11" src = "assets/image-changing.png">
+          </a>
+          <div class="card-body">
+            <a href="./name_to_avatar.html" class="text-decoration-none">
+              <h5 class="card-title text-capitalize text-blue"
+                id="title12">
+              <i class ="bi bi-card-text"></i>
+              Name To Avatar
+            </h5>
+            </a>
+            <p class="card-text" id="content13">This Web page is made just for fun :) You can enter different names and you will get different types of avatars..</p>
+        </div>
+        </div>
+       </div> -->
+</div>
+</div>
+
+<!-- Footer -->
+<!-- <div id="myFooter">
+  <p id="credits">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Contributors</p>
+</div> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="rowcontent">
+      <div class="col-sm-12 col-md-6 footer-sections">
+        <h6 style="text-align: left; font-size: 30px;">About Us</h6>
+        <p class = 'footermaincontent'>
+          CS Central makes life easy for students, especially CSE 
+          students by making some daily-life used web apps available at one place.
+          It is a Website that provides combined characteristics of: Code, Compile and Run, 
+          Currency Converter, Post Office Locator, News Web App, Weather Forecast, Programming 
+          Competition Finder, Translator, QR Code Generator, Dictionary, Note Taking Web App, 
+          Encryption-Decryption and many more.
+        </p>
+      </div>
+      <div class="col-md-3 col-sm-6 footer-sections">
+        <h6 style="font-size: 25px;"> Contact Me</h6>
+        <!-- <ul>
+          <li class="quick-link-footer">
+            <a class="linkedin" link href="https://www.linkedin.com/in/lovish-prabhakar-558855147/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="quick-link-footer">
+            <a class="github" link href="https://github.com/lovishprabhakar" target="_blank">GitHub</a>
+          </li>
+        </ul> -->
+        <p style="color: antiquewhite;">Having some suggestions regarding the website? Contact me using the links given below!</p>
+      </div>
+    </div>
+  </div>
+  <hr width="80%" style="margin: 1% auto;" class="line" />
+  <div class="footerlasr">
+    <div class="footer-copyright">
+      <p id="credits">Made with <i class="fa fa-heart" aria-hidden="true"></i>  by Contributors <a href="https://github.com/lovishprabhakar/CS Central" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+    </div>
+    <div class="footer-social-media" id="social-footer">
+      <a link href="https://www.facebook.com/lovish.prabhakar.7" target="_blank"><i class="fa-brands fa-facebook social-icon"></i></a>
+      <a link href="https://www.instagram.com/lovish_prabhakar_/" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+      <a link href="https://twitter.com/LovishP007" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
+      <a link href="https://www.youtube.com/channel/UCi8QiH-0adpUmPC6TonODEQ" target="_blank"><i class="fa-brands fa-youtube social-icon"></i></a>
+      <a link href="https://www.linkedin.com/in/lovish-prabhakar-558855147/" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
+      <a link href="https://github.com/lovishprabhakar" target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button  onclick="topFunction()" id="btn-go-top" title="Go to top"><p>↑</p></button> 
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+     
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     
+      crossorigin="anonymous"
+    
+    ></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/home.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script>
+      gsap.from('#card', {
+        y: -100,
+        stagger: .2,
+        opacity: 0,
+        duration: 1
+      })
+    </script>
+  </body>
+</html>

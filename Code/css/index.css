@@ -1,0 +1,273 @@
+html,
+body {
+  /* background: https://source.unsplash.com/random/900x700/?fruit; */
+  /* background-color: #0a1f44; */
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.dropdown-content{
+  height: 200px;
+  width: 100px;
+  overflow: auto;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+div#result-data {
+  border-radius: 50px;
+  background: #e2e1e1be;
+  padding-right: 28px;
+}
+
+div#result-data:hover {
+  background: #b9b9b9f1;
+  border-radius: 50px;
+  transition: 2s ease;
+}
+
+h1.h3.mb-3.my-4.fw-normal.text-center {
+  background: #1a1a1c;
+  border-radius: 21px;
+  padding: 13px 8px;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+.card:hover {
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.025);
+}
+#code-card:hover {
+  background-color: inherit;
+  transform: none;
+}
+#news-container:hover {
+  background-color: initial;
+  transform: none;
+}
+
+
+
+body::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
+    border-radius: 8px;
+}
+
+
+
+#preloader{
+    background: #fdcfff url('../assets/preloader.gif') no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+#home-cookie
+{
+    width: 60%;
+  background-color: #90a4ae;
+  border-radius: 6px;
+  border: 3px solid #cfd8dc;
+}
+
+#searchBar {
+  display: flex;
+  gap: 10px;
+}
+
+#searchCard {
+  width: 20rem;
+  border: 2px solid #FFABE1;
+}
+
+#searchCard:hover {
+  border: 3px solid white;
+}
+
+#hamburger {
+  border: 2px solid #FFABE1;
+}
+
+.footer {
+  width: 100%;
+  background-color: #E83283;
+  color:#274e8d;
+  padding-bottom :10px;
+  margin-top: 69px;
+}
+
+.footer-sections 
+{
+  margin-top: 30px;
+}
+
+.rowcontent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerlasr {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#credits {
+  margin-top: 6.9px;
+}
+
+ul {
+  list-style: none;
+}
+
+.quick-link-footer a {
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.quick-link-footer .linkedin:hover {
+  color: #0077B5;
+}
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+.quick-link-footer .github:hover {
+  color: black;
+}
+
+.fa.fa-heart {
+  color: #274e8d;
+}
+.fa-github {
+  color: #274e8d;
+  transition: all 0.3s ease-in;
+}
+.fa-github:hover {
+  color: black;
+}
+
+.footer-social-media {
+  font-size: 25px;
+}
+.footermaincontent
+{
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-instagram:hover {
+  color: rgb(194, 23, 180);
+}
+.fa-twitter:hover {
+  color: rgb(47, 196, 255);
+}
+.fa-youtube:hover {
+  color: rgba(223, 16, 16, 0.904);
+}
+
+#logo{
+  padding-bottom: 13px;
+  padding-right: 5px;
+}
+
+#btn-go-top{
+  display:none;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vh;
+  width: 3.8rem;
+  height: 3.8rem;
+  font-size: 3rem;
+  /* padding-bottom: 1vh; */
+  cursor: pointer;
+  color: #2c2e54;
+    bottom: 20px;
+    border-radius: 60%;
+    background-color: #ffffff;   
+   box-shadow: 0px 6px 0px#2c2e54;
+  transition: all 0.2s ease-out;
+  border: none;
+}
+
+#btn-go-top p{
+  position: relative;
+  top: -13%;
+  left: 0%;
+  text-shadow: 0px 0px 2px #fff;
+}
+
+#btn-go-top:hover{
+  background: #587ce0;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out; 
+  color:#ffffff;
+}
+
+#btn-go-top:active{
+  box-shadow: 0 6px #000000;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(4px);
+}
+.bg-primary {
+  --bs-bg-opacity: -1;}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1200px;
+}
+}
+
+@media (max-width:1199px){
+.nav li a{
+  padding:0px;
+}
+.nav {
+    position: relative;
+    right: 20px;
+}
+header .d-flex #searchCard {
+  margin-right: 0rem; 
+  position: relative;
+  width: 190px;
+  left: 4px;
+}
+}
+
