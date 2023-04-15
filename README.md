@@ -2,7 +2,7 @@
 CS Central is a website that makes life easy for students, especially CSE students by making some daily-life used web apps available at one place.
 
 - ## Features
-CS Central is a website that provides combined characteristics of:
+&nbsp;&nbsp;&nbsp;&nbsp;CS Central is a website that provides combined characteristics of:
 - Online Compiler
 - Polyglot Projects
 - Programming Competition Finder
